@@ -2,11 +2,12 @@
 
 {block name='frontend_listing_box_article_hint'}
 	{if $paulPlentyFreeActive}
-	
-		{assign var="freeField" value="$sArticle.plenty_connector_free{$paulPlentyFreeNr}"}
+		
+		// create variable
+		{assign var="paulPlentyFreeField" value="plenty_connector_free{$paulPlentyFreeNr}"}
 		
 			<div class="product--badge badge--newcomer">
-				{$freeField}
+				{$sArticle.{$paulPlentyFreeField}}
 			</div>
 	{/if}
 	{$smarty.block.parent}
