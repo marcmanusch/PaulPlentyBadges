@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+            
+        <element type="boolean">
+            <name>active</name>
+            <label>Aktiv</label>
+        </element>
+          
+        <element required="true" type="select">
+                <name>paulAlertType</name>
+                <label lang="de">Darstellung</label>
+                <store>
+                        <option>
+                                <value>1</value>
+                                <label lang="DE">Freitextfeld 1</label>
+                        </option>
+                        <option>
+                                <value>2</value>
+                                <label lang="DE">Freitextfeld 2</label>
+                        </option>
+                        <option>
+                                <value>3</value>
+                                <label lang="DE">Freitextfeld 3</label>
+                        </option>
+                        <option>
+                                <value>4</value>
+                                <label lang="DE">Freitextfeld 4</label>
+                        </option>
+                        <option>
+                                <value>5</value>
+                                <label lang="DE">Freitextfeld 5</label>
+                        </option>
+                        <option>
+                                <value>6</value>
+                                <label lang="DE">Freitextfeld 6</label>
+                        </option>
+                        <option>
+                                <value>7</value>
+                                <label lang="DE">Freitextfeld 7</label>
+                        </option>
+                        <option>
+                                <value>8</value>
+                                <label lang="DE">Freitextfeld 8</label>
+                        </option>
+                        <option>
+                                <value>9</value>
+                                <label lang="DE">Freitextfeld 9</label>
+                        </option>
+                        <option>
+                                <value>10</value>
+                                <label lang="DE">Freitextfeld 10</label>
+                        </option>
+                        <option>
+                                <value>11</value>
+                                <label lang="DE">Freitextfeld 11</label>
+                        </option>
+                        <option>
+                                <value>12</value>
+                                <label lang="DE">Freitextfeld 12</label>
+                        </option>
+                        <option>
+                                <value>13</value>
+                                <label lang="DE">Freitextfeld 13</label>
+                        </option>
+                        <option>
+                                <value>14</value>
+                                <label lang="DE">Freitextfeld 14</label>
+                        </option>
+                        <option>
+                                <value>15</value>
+                                <label lang="DE">Freitextfeld 15</label>
+                        </option>
+                        <option>
+                                <value>16</value>
+                                <label lang="DE">Freitextfeld 16</label>
+                        </option>
+                        <option>
+                                <value>17</value>
+                                <label lang="DE">Freitextfeld 17</label>
+                        </option>
+                        <option>
+                                <value>18</value>
+                                <label lang="DE">Freitextfeld 18</label>
+                        </option>
+                        <option>
+                                <value>19</value>
+                                <label lang="DE">Freitextfeld 19</label>
+                        </option>
+                        <option>
+                                <value>20</value>
+                                <label lang="DE">Freitextfeld 20</label>
+                        </option>
+                </store>
+        </element>            
+            
+            
+    </elements>
+</config>
