@@ -42,7 +42,7 @@ class Frontend implements SubscriberInterface
         /** @var $controller \Enlight_Controller_Action */
         $controller = $args->getSubject();
         $view = $controller->View();
-        $view->addTemplateDir($this->container->getParameter('paul_plent_badges.plugin_dir') . '/Resources/views');
+        $view->addTemplateDir($this->container->getParameter('paul_plenty_badges.plugin_dir') . '/Resources/views');
         
         // get plugin settings
         $paulPlentyFreeActive = $config['paulPlentyFreeActive'];
