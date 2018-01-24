@@ -9,6 +9,7 @@
 			<div class="product--badge badge--newcomer">
 				{$sArticle.{$paulPlentyFreeField}}  
 			</div>
+		{/if}
 	{/if}
 	{$smarty.block.parent}
 {/block}
