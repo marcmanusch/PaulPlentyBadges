@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label lang="de">Message in Description</label>
+
+    <version>1.0.0</version>
+    <link>https://github.com/marcmanusch</link>
+    <author>Marc Manusch</author>
+    <compatibility minVersion="5.2.0" />
+    <description lang="de">
+        <![CDATA[
+        <h1>Alert Banner in der Beschreibung</h1>
+        <p>Das Plugin fügt eine zusätzliche Meldung der Beschreibung global hinzu.</p>
+        ]]>
+    </description>
+
+    <changelog version="1.0.0">
+        <changes lang="de">Release</changes>
+    </changelog>
+
+</plugin>
