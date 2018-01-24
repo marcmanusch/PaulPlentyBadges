@@ -6,7 +6,7 @@
 		{assign var="paulPlentyFreeField" value="plenty_connector_free{$paulPlentyFreeNr}"}
 		
 		{if !empty($sArticle.{$paulPlentyFreeField})}
-			<div class="product--badge badge--newcomer">
+			<div class="product--badge badge--newcomer badge--paulPlenty">
 				{$sArticle.{$paulPlentyFreeField}}  
 			</div>
 		{/if}
