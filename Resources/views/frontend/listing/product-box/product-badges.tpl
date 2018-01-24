@@ -6,5 +6,5 @@
 			{$paulPlentyFreeText}
 		</div>
 	{/if}
-  {$smarty.block.parent}
+	{$smarty.block.parent}
 {/block}
