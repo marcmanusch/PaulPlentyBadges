@@ -4,12 +4,12 @@
     <elements>
             
         <element type="boolean">
-            <name>active</name>
+            <name>paulPlentyFreeActive</name>
             <label>Aktiv</label>
         </element>
           
         <element required="true" type="select">
-                <name>paulAlertType</name>
+                <name>paulPlentyFreeNr</name>
                 <label lang="de">Plenty Freitextfeld</label>
                 <store>
                         <option>
