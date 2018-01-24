@@ -10,7 +10,7 @@
           
         <element required="true" type="select">
                 <name>paulAlertType</name>
-                <label lang="de">Darstellung</label>
+                <label lang="de">Plenty Freitextfeld</label>
                 <store>
                         <option>
                                 <value>1</value>
