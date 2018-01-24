@@ -47,12 +47,10 @@ class Frontend implements SubscriberInterface
         // get plugin settings
         $paulPlentyFreeActive = $config['paulPlentyFreeActive'];
         $paulPlentyFreeNr = $config['paulPlentyFreeNr'];
-	    $paulPlentyFreeText = $config['paulPlentyFreeText'];
 	    
         // aggign to frontend
         $view->assign('paulPlentyFreeActive', $paulPlentyFreeActive);
         $view->assign('paulPlentyFreeNr', $paulPlentyFreeNr);
-	    $view->assign('paulPlentyFreeText', $paulPlentyFreeText);
 
     }
 }
