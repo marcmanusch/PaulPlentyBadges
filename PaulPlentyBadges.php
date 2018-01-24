@@ -1,19 +1,19 @@
 <?php
 
-namespace PaulAlertMessageDescription;
+namespace PaulPlentyBadges;
 
 use Shopware\Components\Plugin\Context\InstallContext;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Shopware\Components\Plugin;
 
-class PaulAlertMessageDescription extends Plugin
+class PaulPlentyBadges extends Plugin
 {
     /**
      * @param ContainerBuilder $container
      */
     public function build(ContainerBuilder $container)
     {
-        $container->setParameter('paul_alert_message_description.plugin_dir', $this->getPath());
+        $container->setParameter('paul_plenty_badges.plugin_dir', $this->getPath());
         parent::build($container);
     }
 }
