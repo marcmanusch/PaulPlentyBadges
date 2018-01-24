@@ -5,7 +5,7 @@
 		{assign var="freeField" value="plenty_connector_free{$paulPlentyFreeNr}"}
 		{if $sArticle.$freeField}
 			<div class="product--badge badge--newcomer">
-				{$sArticle.plenty_connector_free{$paulPlentyFreeNr}}
+				test
 			</div>
 		{/if}
 	{/if}
