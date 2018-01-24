@@ -5,11 +5,9 @@
 		
 		{assign var="paulPlentyFreeField" value="plenty_connector_free{$paulPlentyFreeNr}"}
 		
-		{if {$sArticle.{$paulPlentyFreeField}} != ""}
 			<div class="product--badge badge--newcomer">
-				{$sArticle.{$paulPlentyFreeField}}
+				test  {$paulPlentyFreeField}
 			</div>
-		{/if}
 	{/if}
 	{$smarty.block.parent}
 {/block}
