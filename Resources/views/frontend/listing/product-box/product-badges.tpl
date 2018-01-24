@@ -3,7 +3,7 @@
 {block name='frontend_listing_box_article_hint'}
 	{if ($sArticle.plenty_connector_free{$paulPlentyFreeNr}) and $paulPlentyFreeActive}
 		<div class="product--badge badge--newcomer">
-			{$paulPlentyFreeText}
+			{$sArticle.plenty_connector_free{$paulPlentyFreeNr}}
 		</div>
 	{/if}
 	{$smarty.block.parent}
