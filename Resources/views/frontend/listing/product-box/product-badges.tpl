@@ -2,7 +2,8 @@
 
 {block name='frontend_listing_box_article_hint'}
 	{if $paulPlentyFreeActive}
-		{if $sArticle.plenty_connector_free . $paulPlentyFreeNr }
+		{assign var="freeField" value="plenty_connector_free{$paulPlentyFreeNr}"}
+		{if $sArticle.$freeField}
 			<div class="product--badge badge--newcomer">
 				{$sArticle.plenty_connector_free{$paulPlentyFreeNr}}
 			</div>
