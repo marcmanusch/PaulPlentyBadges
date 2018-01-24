@@ -45,12 +45,12 @@ class Frontend implements SubscriberInterface
         $view->addTemplateDir($this->container->getParameter('paul_plent_badges.plugin_dir') . '/Resources/views');
         
         // get plugin settings
-        $active = $config['active'];
+        $paulPlentyFreeActive = $config['paulPlentyFreeActive'];
         $paulPlentyFreeNr = $config['paulPlentyFreeNr'];
 	    $paulPlentyFreeText = $config['paulPlentyFreeText'];
 	    
         // aggign to frontend
-        $view->assign('paulActiveDescriptionMessage', $active);
+        $view->assign('paulPlentyFreeActive', $paulPlentyFreeActive);
         $view->assign('paulPlentyFreeNr', $paulPlentyFreeNr);
 	    $view->assign('paulPlentyFreeText', $paulPlentyFreeText);
 
