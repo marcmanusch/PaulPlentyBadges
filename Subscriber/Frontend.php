@@ -46,13 +46,13 @@ class Frontend implements SubscriberInterface
         
         // get plugin settings
         $active = $config['active'];
-        $paulMessageDescription = $config['paulMessageDescription'];
-	      $paulAlertType = $config['paulAlertType'];
+        $paulPlentyFreeNr = $config['paulPlentyFreeNr'];
+	    $paulPlentyFreeText = $config['paulPlentyFreeText'];
 	    
         // aggign to frontend
         $view->assign('paulActiveDescriptionMessage', $active);
-        $view->assign('paulMessageDescription', $paulMessageDescription);
-	      $view->assign('paulAlertType', $paulAlertType);
+        $view->assign('paulPlentyFreeNr', $paulPlentyFreeNr);
+	    $view->assign('paulPlentyFreeText', $paulPlentyFreeText);
 
     }
 }
