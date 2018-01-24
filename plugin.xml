@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
-    <label lang="de">Message in Description</label>
+    <label lang="de">Artikel Badges</label>
 
     <version>1.0.0</version>
     <link>https://github.com/marcmanusch</link>
@@ -9,8 +9,8 @@
     <compatibility minVersion="5.2.0" />
     <description lang="de">
         <![CDATA[
-        <h1>Alert Banner in der Beschreibung</h1>
-        <p>Das Plugin fügt eine zusätzliche Meldung der Beschreibung global hinzu.</p>
+        <h1>Plentymarkets Freitextfelder als Badges</h1>
+        <p>Das Plugin fügt ein Badge im Listing hinzu.</p>
         ]]>
     </description>
 
