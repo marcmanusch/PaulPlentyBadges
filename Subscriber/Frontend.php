@@ -27,7 +27,7 @@ class Frontend implements SubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return [
-            'Enlight_Controller_Action_PostDispatchSecure_Frontend' => 'onFrontendPostDispatch',
+            'Theme_Inheritance_Template_Directories_Collected' => 'onFrontendPostDispatch',
         ];
     }
 
