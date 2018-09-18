@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">Artikel Badges</label>
 
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <link>https://github.com/marcmanusch</link>
     <author>Marc Manusch</author>
     <compatibility minVersion="5.2.0" />
@@ -13,6 +13,10 @@
         <p>Das Plugin fügt ein Badge im Listing hinzu.</p>
         ]]>
     </description>
+
+    <changelog version="1.0.2">
+        <changes lang="de">Bugfix - udate for SW v5.5 compatibility</changes>
+    </changelog>
 
     <changelog version="1.0.1">
         <changes lang="de">Change Event for register Template (Theme_Inheritance_Template_Directories_Collected)</changes>
