@@ -27,30 +27,36 @@ class Frontend implements SubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return [
-            'Theme_Inheritance_Template_Directories_Collected' => 'onFrontendPostDispatch',
+            'Theme_Inheritance_Template_Directories_Collected' => 'onCollectTemplateDir',
         ];
     }
 
     /**
      * @param \Enlight_Event_EventArgs $args
      */
-    public function onFrontendPostDispatch(\Enlight_Event_EventArgs $args)
+    public function onCollectTemplateDir(\Enlight_Event_EventArgs $args)
     {
-        
-        $config = $this->container->get('shopware.plugin.config_reader')->getByPluginName('PaulPlentyBadges', $shop);
-        
+
+
         /** @var $controller \Enlight_Controller_Action */
-        $controller = $args->getSubject();
+        /*$controller = $args->getSubject();
         $view = $controller->View();
-        $view->addTemplateDir($this->container->getParameter('paul_plenty_badges.plugin_dir') . '/Resources/views');
-        
+        $view->addTemplateDir($this->container->getParameter('paul_plenty_badges.plugin_dir') . '/Resources/views');*/
+
+        $dirs = $args->getReturn();
+        $dirs[] = $this->pluginDir . '/views';
+
+        $args->setReturn($dirs);
+
+        /*$config = $this->container->get('shopware.plugin.config_reader')->getByPluginName('PaulPlentyBadges', $shop);
+
         // get plugin settings
         $paulPlentyFreeActive = $config['paulPlentyFreeActive'];
         $paulPlentyFreeNr = $config['paulPlentyFreeNr'];
-	    
+
         // aggign to frontend
         $view->assign('paulPlentyFreeActive', $paulPlentyFreeActive);
-        $view->assign('paulPlentyFreeNr', $paulPlentyFreeNr);
+        $view->assign('paulPlentyFreeNr', $paulPlentyFreeNr);*/
 
     }
 }
