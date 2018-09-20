@@ -6,7 +6,7 @@
   <services>
 
       <service class="PaulPlentyBadges\Subscriber\TemplateRegistration" id="paul_plenty_badges.subscriber.template_registration">
-          <argument id="service_container" type="service"/>
+          <argument type="service" id="template"/>
           <argument>%paul_plenty_badges.plugin_dir%</argument>
           <tag name="shopware.event_subscriber"/>
       </service>
