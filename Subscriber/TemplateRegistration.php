@@ -18,8 +18,9 @@ class TemplateRegistration implements SubscriberInterface
     private $pluginBaseDirectory;
 
     /**
+     * TemplateRegistration constructor.
      * @param Enlight_Template_Manager $templateManager
-     * @param string $pluginBaseDirectory
+     * @param $pluginBaseDirectory
      */
     public function __construct(Enlight_Template_Manager $templateManager, $pluginBaseDirectory)
     {
