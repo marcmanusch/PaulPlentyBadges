@@ -5,17 +5,14 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <services>
 
-    <service class="PaulPlentyBadges\Subscriber\CompileLess" id="paul_plenty_badges.subscriber.compile_less">
-        <argument id="service_container" type="service"/>
-        <tag name="shopware.event_subscriber"/>
-    </service>
+      <service class="PaulPlentyBadges\Subscriber\TemplateRegistration" id="paul_plenty_badges.subscriber.template_registration">
+          <argument id="service_container" type="service"/>
+          <argument>%paul_plenty_badges.plugin_dir%</argument>
+          <tag name="shopware.event_subscriber"/>
+      </service>
 
-    <service class="PaulPlentyBadges\Subscriber\Frontend" id="paul_plenty_badges.subscriber.frontend">
-        <argument id="service_container" type="service"/>
-        <tag name="shopware.event_subscriber"/>
-    </service>
-             
-    <service class="PaulPlentyBadges\Subscriber\Frontend" id="paul_plenty_badges.subscriber.collect_config">
+
+      <service class="PaulPlentyBadges\Subscriber\Frontend" id="paul_plenty_badges.subscriber.collect_config">
         <argument id="service_container" type="service"/>
         <tag name="shopware.event_subscriber"/>
     </service>
