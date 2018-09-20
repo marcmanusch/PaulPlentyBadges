@@ -12,7 +12,7 @@
       </service>
 
 
-      <service class="PaulPlentyBadges\Subscriber\Frontend" id="paul_plenty_badges.subscriber.collect_config">
+      <service class="PaulPlentyBadges\Subscriber\CollectConfig" id="paul_plenty_badges.subscriber.collect_config">
         <argument id="service_container" type="service"/>
         <tag name="shopware.event_subscriber"/>
     </service>
