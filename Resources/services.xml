@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<container xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://symfony.com/schema/dic/services"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+  <services>
+
+      <service class="PaulPlentyBadges\Subscriber\TemplateRegistration" id="paul_plenty_badges.subscriber.template_registration">
+          <argument id="service_container" type="service"/>
+          <tag name="shopware.event_subscriber"/>
+      </service>
+
+
+      <service class="PaulPlentyBadges\Subscriber\CollectConfig" id="paul_plenty_badges.subscriber.collect_config">
+        <argument id="service_container" type="service"/>
+        <tag name="shopware.event_subscriber"/>
+    </service>
+
+      <!-- Decoration -->
+      <service id="shopware_storefront.list_product_service_decorator"
+               class="PaulPlentyBadges\Bundle\StoreFrontBundle\ListProductService"
+               decorates="shopware_storefront.list_product_service"
+               public="false">
+          <argument type="service" id="shopware_storefront.list_product_service_decorator.inner"/>
+          <argument id="dbal_connection" type="service"/>
+          <argument id="config" type="service"/>
+      </service>
+
+
+  </services>
+</container>
