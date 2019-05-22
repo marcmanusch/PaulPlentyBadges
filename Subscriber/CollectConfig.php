@@ -21,7 +21,8 @@ class CollectConfig implements SubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return [
-            'Enlight_Controller_Action_Init_Frontend_Listing' => 'onPostDispatch',
+            'Enlight_Controller_Action_PreDispatch_Widgets' => 'onPostDispatch',
+            'Enlight_Controller_Action_PreDispatch_Frontend' => 'onPostDispatch'
         ];
     }
     /**
@@ -37,14 +38,13 @@ class CollectConfig implements SubscriberInterface
 
         $config = $this->container->get('shopware.plugin.config_reader')->getByPluginName('PaulPlentyBadges', $shop);
 
-        // Übergebe Wete an View OHNE CACHE!!
-        $view->paulPlentyFreeActive = $config['paulPlentyFreeActive'];
-        $view->paulPlentyFreeNr = $config['paulPlentyFreeNr'];
-        $view->PaulPlentyBadgesRibonActive = $config['PaulPlentyBadgesRibonActive'];
-        $view->PaulPlentyBadgesRibonPosition = $config['PaulPlentyBadgesRibonPosition'];
-        $view->PaulPlentyBadgesRibonColor = $config['PaulPlentyBadgesRibonColor'];
-        $view->PaulPlentyBadgesRibonTextColor = $config['PaulPlentyBadgesRibonTextColor'];
-        $view->PaulPlentyBadgesListingBackground = $config['PaulPlentyBadgesListingBackground'];
-        $view->PaulPlentyBadgesListingText = $config['PaulPlentyBadgesListingText'];
+        $view->assign('paulPlentyFreeActive', $config['paulPlentyFreeActive']);
+        $view->assign('paulPlentyFreeNr', $config['paulPlentyFreeNr']);
+        $view->assign('PaulPlentyBadgesRibonActive', $config['PaulPlentyBadgesRibonActive']);
+        $view->assign('PaulPlentyBadgesRibonPosition', $config['PaulPlentyBadgesRibonPosition']);
+        $view->assign('PaulPlentyBadgesRibonColor', $config['PaulPlentyBadgesRibonColor']);
+        $view->assign('PaulPlentyBadgesRibonTextColor', $config['PaulPlentyBadgesRibonTextColor']);
+        $view->assign('PaulPlentyBadgesListingBackground', $config['PaulPlentyBadgesListingBackground']);
+        $view->assign('PaulPlentyBadgesListingText', $config['PaulPlentyBadgesListingText']);
     }
 }
