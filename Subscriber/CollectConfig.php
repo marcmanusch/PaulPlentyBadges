@@ -21,7 +21,8 @@ class CollectConfig implements SubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return [
-            'Enlight_Controller_Action_PostDispatchSecure_Frontend' => 'onPostDispatch',
+            'Enlight_Controller_Action_PreDispatch_Widgets' => 'onPostDispatch',
+            'Enlight_Controller_Action_PreDispatch_Frontend' => 'onPostDispatch',
         ];
     }
     /**
