@@ -37,12 +37,14 @@ class CollectConfig implements SubscriberInterface
 
         $config = $this->container->get('shopware.plugin.config_reader')->getByPluginName('PaulPlentyBadges', $shop);
 
-        // get plugin settings
-        $paulPlentyFreeActive = $config['paulPlentyFreeActive'];
-        $paulPlentyFreeNr = $config['paulPlentyFreeNr'];
-
         // aggign to frontend
-        $view->assign('paulPlentyFreeActive', $paulPlentyFreeActive);
-        $view->assign('paulPlentyFreeNr', $paulPlentyFreeNr);
+        $view->assign('paulPlentyFreeActive', $config['paulPlentyFreeActive']);
+        $view->assign('paulPlentyFreeNr', $config['paulPlentyFreeNr']);
+        $view->assign('PaulPlentyBadgesRibonActive', $config['PaulPlentyBadgesRibonActive']);
+        $view->assign('PaulPlentyBadgesRibonPosition', $config['PaulPlentyBadgesRibonPosition']);
+        $view->assign('PaulPlentyBadgesRibonColor', $config['PaulPlentyBadgesRibonColor']);
+        $view->assign('PaulPlentyBadgesRibonTextColor', $config['PaulPlentyBadgesRibonTextColor']);
+        $view->assign('PaulPlentyBadgesListingBackground', $config['PaulPlentyBadgesListingBackground']);
+        $view->assign('PaulPlentyBadgesListingText', $config['PaulPlentyBadgesListingText']);
     }
 }
