@@ -1,7 +1,7 @@
 {extends file="parent:frontend/detail/image.tpl"}
 
 
-{block name="frontend_detail_image_box"}
+{block name="frontend_detail_image_default_image_slider_item"}
 
     {assign var="paulPlentyFreeField" value="plenty_connector_free{$paulPlentyFreeNr}"}
 
