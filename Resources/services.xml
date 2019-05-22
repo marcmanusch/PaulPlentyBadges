@@ -17,11 +17,10 @@
     </service>
 
       <!-- Decoration -->
-      <service id="shopware_storefront.list_product_service_decorator"
+      <service id="paul_plenty_badges.list_product_service_decorator"
                class="PaulPlentyBadges\Bundle\StoreFrontBundle\ListProductService"
-               decorates="shopware_storefront.list_product_service"
-               public="false">
-          <argument type="service" id="shopware_storefront.list_product_service_decorator.inner"/>
+               decorates="shopware_storefront.list_product_service">
+          <argument type="service" id="paul_plenty_badges.list_product_service_decorator.inner"/>
           <argument id="dbal_connection" type="service"/>
           <argument id="config" type="service"/>
       </service>

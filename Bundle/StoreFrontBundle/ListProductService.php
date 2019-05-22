@@ -2,7 +2,6 @@
 
 namespace PaulPlentyBadges\Bundle\StoreFrontBundle;
 
-use League\Flysystem\Exception;
 use Shopware\Bundle\StoreFrontBundle\Service\ListProductServiceInterface;
 use Shopware\Bundle\StoreFrontBundle\Struct;
 use Doctrine\DBAL\Connection;
