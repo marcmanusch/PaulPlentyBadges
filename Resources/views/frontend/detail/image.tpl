@@ -5,9 +5,9 @@
 
     {assign var="paulPlentyFreeField" value="plenty_connector_free{$paulPlentyFreeNr}"}
 
-    {if $paulPlentyFreeActive && {$sArticle.{$paulPlentyFreeField}}}
-        <div class="ribbon is--right">
-            <p class="ribbon--content green">{$sArticle.{$paulPlentyFreeField}}</p>
+    {if $paulPlentyFreeActive && {$sArticle.{$paulPlentyFreeField}} && $PaulPlentyBadgesRibonActive}
+        <div class="ribbon is--{$PaulPlentyBadgesRibonPosition}">
+            <p class="ribbon--content" style="background-color: {$PaulPlentyBadgesRibonColor}; color: {$PaulPlentyBadgesRibonTextColor}">{$sArticle.{$paulPlentyFreeField}}</p>
         </div>
     {/if}
     {$smarty.block.parent}
