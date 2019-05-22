@@ -1,6 +1,6 @@
 {extends file='parent:frontend/listing/product-box/product-badges.tpl'}
 
-{block name='frontend_listing_box_article_hint'}
+{block name='frontend_listing_box_article_discount'}
 
     {if $sArticle.attributes.paul_listing_badges->get('paul_plenty_badge')}
         {$paul_plenty_badge = $sArticle.attributes.paul_listing_badges->get('paul_plenty_badge')}
